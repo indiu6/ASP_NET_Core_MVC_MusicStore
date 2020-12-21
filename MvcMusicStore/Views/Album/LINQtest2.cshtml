@@ -1,0 +1,26 @@
+﻿@model IEnumerable<PriceSurcharged>
+
+@{
+    ViewData["Title"] = "LINQtest2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>LINQtest2</h1>
+
+<table>
+    <tr>
+        <th>title</th>
+        <th>artist</th>
+        <th>list price</th>
+        <th>SurCharged price</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@item.Title</td>
+        <td>@item.Artist</td>
+        <td>@item.Price.ToString("c2")</td>
+        <td>@item.SurChargePrice.ToString("c2")</td>
+    </tr>
+    }
+</table>

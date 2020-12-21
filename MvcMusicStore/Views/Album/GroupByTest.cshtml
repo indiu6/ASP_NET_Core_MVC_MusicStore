@@ -1,0 +1,40 @@
+﻿@model IEnumerable<LinqTestArtistCount>
+
+@{
+    ViewData["Title"] = "GroupByTest";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>GroupByTest</h1>
+
+<table>
+    <tr>
+        <th>Artist</th>
+        <th>Count</th>
+        <th>Total Price</th>
+        <th>Average Price</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.artist)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.count)
+            </td>
+            <td>
+                @item.totalPrice.ToString("c")
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.averagePrice)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.artist">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.artist">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.artist">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
