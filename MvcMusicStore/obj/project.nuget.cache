@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TumyI0LaSWVcu2oyc+LiAdhbH5XEaCwn2bRf9QEMoZYlcEgJ6H6ap4tklWlF3kKbHJSl4xF9Na92Vr3IwurjJg==",
+  "dgSpecHash": "C3T0f17s37avKguWFu9TN1NYpVVxwEsQzp1f0xv64pdr3DdzmSgCzGPPs0v+88NK/Ao/ROyGePZz2XkZ8OiN8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hewas\\OneDrive\\PROGRAMMING\\repos\\MvcMusicStore\\MvcMusicStore\\MvcMusicStore.csproj",
+  "projectFilePath": "D:\\GithubRepos\\ASP_NET_Core_MVC_MusicStore\\MvcMusicStore\\MvcMusicStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hewas\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.8\\microsoft.aspnetcore.cryptography.internal.3.1.8.nupkg.sha512",
     "C:\\Users\\hewas\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.8\\microsoft.aspnetcore.cryptography.keyderivation.3.1.8.nupkg.sha512",

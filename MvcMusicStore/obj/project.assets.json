@@ -9495,11 +9495,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hewas\\OneDrive\\PROGRAMMING\\repos\\MvcMusicStore\\MvcMusicStore\\MvcMusicStore.csproj",
+      "projectUniqueName": "D:\\GithubRepos\\ASP_NET_Core_MVC_MusicStore\\MvcMusicStore\\MvcMusicStore.csproj",
       "projectName": "MvcMusicStore",
-      "projectPath": "C:\\Users\\hewas\\OneDrive\\PROGRAMMING\\repos\\MvcMusicStore\\MvcMusicStore\\MvcMusicStore.csproj",
+      "projectPath": "D:\\GithubRepos\\ASP_NET_Core_MVC_MusicStore\\MvcMusicStore\\MvcMusicStore.csproj",
       "packagesPath": "C:\\Users\\hewas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hewas\\OneDrive\\PROGRAMMING\\repos\\MvcMusicStore\\MvcMusicStore\\obj\\",
+      "outputPath": "D:\\GithubRepos\\ASP_NET_Core_MVC_MusicStore\\MvcMusicStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hewas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9580,7 +9580,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
