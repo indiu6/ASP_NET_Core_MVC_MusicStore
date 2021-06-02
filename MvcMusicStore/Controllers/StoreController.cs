@@ -9,7 +9,6 @@ using MvcMusicStore.Models;
 namespace MvcMusicStore.Controllers
 {
     // display music available for users to add to their shopping cart
-    // D. Turton July 2016
     public class StoreController : Controller
     {
         // Index is the default action for this controller
@@ -73,10 +72,6 @@ namespace MvcMusicStore.Controllers
         {
             return View();
         }
-
-
-
-
 
         public IActionResult RequestStuff(string user)
         {

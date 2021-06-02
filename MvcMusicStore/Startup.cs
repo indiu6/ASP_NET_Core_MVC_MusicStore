@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MvcMusicStore.Models;
 using Microsoft.AspNetCore.Mvc;
+using MvcMusicStore.Hubs;
 
 namespace MvcMusicStore
 {
@@ -45,6 +46,8 @@ namespace MvcMusicStore
             // add support for Session variables
             services.AddDistributedMemoryCache();
             services.AddSession();
+
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -85,28 +88,10 @@ namespace MvcMusicStore
                         controller = "Album" 
                     });
 
-                //endpoints.MapControllerRoute(    // only use if language is English or German
-                //    name: "supportedLanguages",
-                //    template: "{language}/{controller=Home}/{action=Index}/{id?}",
-                //    defaults: null,
-                //    constraints: new { language = @"(en)|(de)" } 		// - if language isn't listed, go to the next mapping
-                //    );
-
-                //endpoints.MapControllerRoute(    // unsupported language requested
-                //    name: "unsupportedLanguage",
-                //    template: "{language}/{controller=Home}/{action=Index}/{id?}",
-                //    defaults: null,
-                //    constraints: new { language = @"[a-zA-Z]{2}" }, // if a 2-characture language was provided
-                //    dataTokens: new { language = "en" }                 // - override with English
-                //    );
-
-                //endpoints.MapControllerRoute(    // no language specified
-                //    name: "defaultLanguege",
-                //    template: "{controller=Home}/{action=Index}/{id?}",
-                //    defaults: new { language = "en" });   			// default language to English
-
-
                 endpoints.MapRazorPages();
+
+                // DI and add SignalR to routing system
+                endpoints.MapHub<ChatHub>("/chatHub");
             });
         }
     }
